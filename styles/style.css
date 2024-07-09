@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0%;
+}
+
+
+
+.header{
+   padding: 2%;
+}
+.body{
+    height: 100vh;
+    ox-sizing: border-box;
+}
+
+.principal{
+    display: flex;
+    justify-content: space-between;
+    padding: 10%;
+}
+.principal__izquierda{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 60%;
+}
+.principal__izquierda_text{
+   
+}
+
+
+.principal__derecha{
+width: 40%;
+
+}
