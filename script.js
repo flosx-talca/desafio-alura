@@ -17,6 +17,17 @@ function botonEncriptar(){
 }
 
 
+function botonDesencriptar(){
+    const texto = desencriptarTexto(textArea.value);
+    mensaje.value=texto;
+    textArea.value="";
+    /*mensaje.style.backgroundImage = "none";
+    texto1.remove();
+    texto2.remove();
+    botonCopiar.style.display = "inline";*/
+
+}
+
 function encriptarTexto(textoEncriptado){
     let matriz = [["e","enter"], ["i","imes"], ["a","ai"], ["o","ober"], ["u","ufat"]];
     //console.table(matriz);
@@ -31,6 +42,7 @@ function encriptarTexto(textoEncriptado){
     }
     return textoEncriptado;
 }
+
 
 function desencriptarTexto(textoDesencriptado){
     let matriz = [["e","enter"], ["i","imes"], ["a","ai"], ["o","ober"], ["u","ufat"]];
