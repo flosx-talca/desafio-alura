@@ -4,15 +4,47 @@ const texto1 = document.querySelector(".principal__salida_mensaje_inicial");
 const texto2 = document.querySelector(".principal__salida_mensaje_inicial_pequeno");
 const botonCopiar = document.querySelector(".btn_copiar");
 
+//console.log(("a".charCodeAt(0)));
+
+
+function validaCaracteresEspeciales(validar){
+    for(i=0;i<validar.length;i++){
+        //console.log(validar.charCodeAt(i));
+        if ((validar.charCodeAt(i) >= 97 && validar.charCodeAt(i) <= 122 )){
+
+        }
+        else{
+            return false;
+        }
+    }
+    if(i==0){
+        return false;
+
+    }
+    return true;
+}
+
+
 
 function botonEncriptar(){
-    const texto = encriptarTexto(textArea.value);
-    mensaje.value=texto;
-    textArea.value="";
-    mensaje.style.backgroundImage = "none";
-    texto1.remove();
-    texto2.remove();
-    botonCopiar.style.display = "inline";
+    let caracteresEspeciales = true;
+    let vacio =
+    caracteresEspeciales = validaCaracteresEspeciales(textArea.value);
+    console.log(caracteresEspeciales);
+    if (caracteresEspeciales){
+        const texto = encriptarTexto(textArea.value);
+        mensaje.value=texto;
+        textArea.value="";
+        mensaje.style.backgroundImage = "none";
+        texto1.remove();
+        texto2.remove();
+        botonCopiar.style.display = "inline";
+    
+    }
+    else{
+        alert("Ingresar solo minusculas, sin acentos ni caracteres especiales y al menos 1 caracter")
+
+    }
 
 }
 

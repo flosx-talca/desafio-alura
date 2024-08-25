@@ -48,7 +48,7 @@
     border: none;
     color: #0A3871;
     margin-top: 10px;
-    text-transform: lowercase;
+    /*text-transform: lowercase;*/
 }
 .text-area:focus {
     outline: none;
