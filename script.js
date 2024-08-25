@@ -1,5 +1,20 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".text-area_mensaje");
+const texto1 = document.querySelector(".principal__salida_mensaje_inicial");
+const texto2 = document.querySelector(".principal__salida_mensaje_inicial_pequeno");
+const botonCopiar = document.querySelector(".btn_copiar");
+
+
+function botonEncriptar(){
+    const texto = encriptarTexto(textArea.value);
+    mensaje.value=texto;
+    textArea.value="";
+    mensaje.style.backgroundImage = "none";
+    texto1.remove();
+    texto2.remove();
+    botonCopiar.style.display = "inline";
+
+}
 
 
 function encriptarTexto(textoEncriptado){
@@ -10,9 +25,26 @@ function encriptarTexto(textoEncriptado){
         if(textoEncriptado.includes(matriz[i][0])){
             textoEncriptado = textoEncriptado.replaceAll(matriz[i][0],matriz[i][1]);
 
-        })
+        }
 
         
     }
     return textoEncriptado;
 }
+
+function desencriptarTexto(textoDesencriptado){
+    let matriz = [["e","enter"], ["i","imes"], ["a","ai"], ["o","ober"], ["u","ufat"]];
+    //console.table(matriz);
+    //textoEncriptado = textoEncriptado.toLowerCase();
+    for(let i = 0; i < matriz.length; i++){
+        if(textoDesencriptado.includes(matriz[i][1])){
+            textoDesencriptado = textoDesencriptado.replaceAll(matriz[i][1],matriz[i][0]);
+
+        }
+
+        
+    }
+    return textoDesencriptado;
+}
+
+
