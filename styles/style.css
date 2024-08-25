@@ -24,11 +24,24 @@
     
 }
 
+
+.principal__izquierda{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content:space-between;
+  
+    
+}
+
+
 .principal__derecha{
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
+    justify-content:space-between;
+    gap: 1px;
+    
 }
 .text-area{
     border: none;
@@ -50,14 +63,42 @@
     border: none;
     border-radius: 24px;
     color: #0A3871;
-    /* margin-left: 98px;
+    caret-color: transparent;
+    width: 336px;
+    height: 304px;
+    padding-bottom: 0%;
+   /* margin-left: 98px;
     margin-top: 10px;
-    padding-left: 20px; */
+    padding-left: 20px;  
+    position: fixed; */
+    
+    
+    
+    
+    
+    
    
 
 }
 .text-area_mensaje:focus{
     outline: none;
+}
+
+.principal__salida_mensaje_inicial{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    color: #343A40;
+  
+
+}
+
+.principal__salida_mensaje_inicial_pequeno{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    color: #343A40;
+
 }
 
 .botones{
@@ -76,6 +117,9 @@
     cursor: pointer;
     height: 67px;
     width: 328px;
+    font-size: 16px;
+    
+
 }
 
 .btn_desencriptar{
@@ -86,6 +130,7 @@
     cursor: pointer;
     height: 67px;
     width: 328px;
+    font-size: 16px;
 
 }
 .principal__botones__etiqueta{
@@ -103,6 +148,9 @@
     cursor: pointer;
     height: 67px;
     width: 328px;
+    font-size: 16px;
+    display: none;
+    
     
 
 }
