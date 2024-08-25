@@ -59,4 +59,16 @@ function desencriptarTexto(textoDesencriptado){
     return textoDesencriptado;
 }
 
+function copiarContenido(){
+    mensaje.select();
+   navigator.clipboard.writeText(mensaje.value)
+    .then(() => {
+        //console.log('Text copied to clipboard');
+        //alert('Text copied to clipboard: ' + mensaje.value);
+    })
+    .catch(err => {
+        console.error('Failed to copy text: ', err);
+    });
+}
+
 
