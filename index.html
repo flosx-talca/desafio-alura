@@ -15,19 +15,24 @@
     <main class="principal">
         
         <section class="principal__izquierda">
-            <section class="principal__izquierda_text">
-                <input type="text" name="Desc" id="">      
-            </section>
-            <section class="principal__izquierda_botones">
-                <p class="principal__botones__etiqueta">Solo letras minúsculas y sin acentos </p>
-                <input type="button" value="Encriptar">
-                <input type="button" value="Desencriptar">
-            </section>
+         
+                <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese texto aquí"></textarea>    
+           
+            <div class="principal__izquierda_mensaje">
+                <h6 class="principal__botones__etiqueta">Solo letras minúsculas y sin acentos </h6>
+            </div>
+            <div class="botones">
+                <input  class="btn_encriptar" type="button" value="Encriptar">
+                <input  class="btn_desencriptar" type="button" value="Desencriptar">
+            </div>
         </section>
         <section class="principal__derecha">
+            <textarea class="text-area_mensaje" cols="20" rows="10" ></textarea>    
             <div>
+                <button class="btn_copiar">Copiar</button>
+          <!--   <div>
                 <img src="./assets/Muneco.png" alt="Muñeco">
-            </div>
+            </div> -->
             <div>
                 <p class="principal__salida_mensaje_inicial"> Ningún mensaje fue encontrado</p>
                 <p class="principal__salida_mensaje_inicial_pequeno"> Ingresa el texto que desees encriptar o desencriptar.</p>

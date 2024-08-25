@@ -1,10 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 *{
+    background:#E5E5E5 ;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
     padding: 0;
     margin: 0%;
 }
 
+.header__logo{
+    padding-top: 10px;
+    margin-top: 1%;
+    margin-left: 3%;
+    width: 2%;
+}
+
+.principal{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    gap: 70px;
+    
+}
+
+.principal__derecha{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.text-area{
+    border: none;
+    color: #0A3871;
+    margin-top: 10px;
+    text-transform: lowercase;
+}
+.text-area:focus {
+    outline: none;
+}
 
 
+::placeholder { color: #0A3871;}
+
+
+.text-area_mensaje{
+    background-image: url("../assets/Muneco.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    /* margin-left: 98px;
+    margin-top: 10px;
+    padding-left: 20px; */
+   
+
+}
+.text-area_mensaje:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+    gap: 24px;
+
+
+}
+
+.btn_encriptar{
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #E5E5E5;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.btn_desencriptar{
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+
+}
+.principal__botones__etiqueta{
+    color: #495057;
+    font-size: 18px;
+
+
+}
+
+.btn_copiar{
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    
+
+}
+
+
+
+
+
+/*
 .header{
    padding: 2%;
    width: 120px;
@@ -41,3 +148,5 @@
     border: 2px  blue solid;
     border-radius: 15px;
 }
+
+*/
