@@ -61,13 +61,12 @@ function desencriptarTexto(textoDesencriptado){
 
 function copiarContenido(){
     mensaje.select();
-   navigator.clipboard.writeText(mensaje.value)
+    navigator.clipboard.writeText(mensaje.value)
     .then(() => {
-        //console.log('Text copied to clipboard');
-        //alert('Text copied to clipboard: ' + mensaje.value);
+        console.log('Texto copiado');
     })
     .catch(err => {
-        console.error('Failed to copy text: ', err);
+        console.error('Fallo al copiar texto ', err);
     });
 }
 
