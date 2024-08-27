@@ -11,6 +11,7 @@
     margin: 0%;
 }
 
+
 .header__logo{
     padding-top: 10px;
     margin-top: 1%;
@@ -19,6 +20,7 @@
     height: 48px;
 }
 
+
 .principal{
     display: flex;
     margin-top: 50px;
@@ -26,17 +28,13 @@
     gap: 70px;
     margin-bottom: 2%;
     box-sizing: border-box;
-    
 }
 
 
 .principal__izquierda{
     display: flex;
     flex-direction: column;
-    
     justify-content:space-between;
-  
-    
 }
 
 
@@ -46,19 +44,17 @@
     align-items: center;
     justify-content:space-between;
     gap: 1px;
-    
 }
+
+
 .text-area{
     border: none;
     color: #0A3871;
     margin-top: 10px;
-    /*text-transform: lowercase;*/
 }
 .text-area:focus {
     outline: none;
 }
-
-
 ::placeholder { color: #0A3871;}
 
 
@@ -72,47 +68,36 @@
     width: 336px;
     height: 304px;
     padding-bottom: 0%;
-   /* margin-left: 98px;
-    margin-top: 10px;
-    padding-left: 20px;  
-    position: fixed; */
-    
-    
-    
-    
-    
-    
-   
-
 }
+
+
 .text-area_mensaje:focus{
     outline: none;
 }
+
 
 .principal__salida_mensaje_inicial{
     font-size: 24px;
     text-align: center;
     font-weight: 700;
     color: #343A40;
-  
-
 }
+
 
 .principal__salida_mensaje_inicial_pequeno{
     font-size: 16px;
     text-align: center;
     font-weight: 400;
     color: #343A40;
-
 }
+
 
 .botones{
     display: flex;
     margin-top: 18px;
     gap: 24px;
-
-
 }
+
 
 .btn_encriptar{
     background-color: #0A3871;
@@ -123,9 +108,8 @@
     height: 67px;
     width: 328px;
     font-size: 16px;
-    
-
 }
+
 
 .btn_desencriptar{
     background-color: #D8DFE8;
@@ -136,8 +120,9 @@
     height: 67px;
     width: 328px;
     font-size: 16px;
-
 }
+
+
 .principal__botones__etiqueta{
     color: #495057;
     font-size: 18px;
@@ -145,6 +130,7 @@
 
 
 }
+
 
 .btn_copiar{
     background-color: #D8DFE8;
@@ -156,44 +142,39 @@
     width: 328px;
     font-size: 16px;
     display: none;
-    
-    
-
 }
+
 
 .footer{
     color: #495057;
     font-size:12px;
     text-align: center;
- 
 }
 
 
 @media (max-width: 1384px) {
-    
+  
     .principal{
         display: flex;
         flex-direction: column;
         align-items: center;
-           
-
     }
+
     .text-area{
         border: none;
         color: #0A3871;
         margin-top: 10px;
         width:auto;
         height:auto;
-        
-        /*text-transform: lowercase;*/
     }
+
+
     .principal__derecha{
         display: flex;
         flex-direction: column;
-       
         width: auto;
-        
     }
+
 
     .text-area_mensaje{
         background-image: none;
@@ -202,37 +183,27 @@
         background: transparent;
         position: relative;
         display: none;
-       /* margin-left: 98px;
-        margin-top: 10px;
-        padding-left: 20px;  
-        position: fixed; */
-        
-        
-        
-        
-        
-        
-       
-    
+        text-align: justify;
     }
-    @media (max-width: 375px) {
+    
+    
+     @media (max-width: 375px) {
     
         .principal{
             display: flex;
             flex-direction: column;
             align-items: center;
-               
-    
         }
+    
+    
         .principal__izquierda{
             display: flex;
             flex-direction: column;
-            
             justify-content:space-between;
             align-items: center;
-          
-            
         }
+    
+    
         .text-area{
             border: none;
             color: #0A3871;
@@ -240,7 +211,6 @@
             width:auto;
             height:auto;
             text-align: center;
-            /*text-transform: lowercase;*/
         }
         
 
@@ -250,20 +220,17 @@
             margin-top: 18px;
             gap: 24px;
             align-items: center;
-            
-        
-        
         }
+
 
         .principal__derecha{
             display: flex;
             flex-direction: column;
-           
             width: auto;
             align-items: center;
-            
         }
     
+
         .text-area_mensaje{
             background-image: none;
             width:auto;
@@ -271,37 +238,7 @@
             background: transparent;
             position: relative;
             display: none;
-           /* margin-left: 98px;
-            margin-top: 10px;
-            padding-left: 20px;  
-            position: fixed; */
-            
-            
-            
-            
-            
-            
-           
-        
         }
-    
-    
-    /*
-    .presentacion{
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
-    .presentacion__contenido{
-        width: auto;
-    }
-    .header{
-        padding: 10%;
-    }
-    .header__menu{
-        justify-content: center;
-    }*/
-
-    
+       
 }
-
 

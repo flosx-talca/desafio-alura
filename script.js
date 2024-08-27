@@ -4,8 +4,6 @@ const texto1 = document.querySelector(".principal__salida_mensaje_inicial");
 const texto2 = document.querySelector(".principal__salida_mensaje_inicial_pequeno");
 const botonCopiar = document.querySelector(".btn_copiar");
 
-//console.log(("a".charCodeAt(0)));
-
 
 function validaCaracteresEspeciales(validar){
     for(i=0;i<validar.length;i++){
@@ -27,18 +25,14 @@ function validaCaracteresEspeciales(validar){
 
 function cumpleCondicion(){
     let caracteresEspeciales = true;
-   // let vacio =
-   alert ("debtro de la funcioon")
     caracteresEspeciales = validaCaracteresEspeciales(textArea.value);
     console.log(caracteresEspeciales);
     return caracteresEspeciales;
-
-
 }
+
 
 function botonEncriptar(){
     let pasoOK = cumpleCondicion();
-    
     if (pasoOK){
         const texto = encriptarTexto(textArea.value);
         mensaje.value=texto;
@@ -61,35 +55,25 @@ function botonEncriptar(){
 function botonDesencriptar(){
     let pasoOK = cumpleCondicion();
     if (pasoOK){
-
-
         const texto = desencriptarTexto(textArea.value);
         mensaje.value=texto;
         textArea.value="";
-        /*mensaje.style.backgroundImage = "none";
-        texto1.remove();
-        texto2.remove();
-        botonCopiar.style.display = "inline";*/
     }
     else{
         alert("Ingresar solo minusculas, sin acentos ni caracteres especiales y al menos 1 caracter");
 
     }
-    
-
 }
+
 
 function encriptarTexto(textoEncriptado){
     let matriz = [["e","enter"], ["i","imes"], ["a","ai"], ["o","ober"], ["u","ufat"]];
-    //console.table(matriz);
     textoEncriptado = textoEncriptado.toLowerCase();
     for(let i = 0; i < matriz.length; i++){
         if(textoEncriptado.includes(matriz[i][0])){
             textoEncriptado = textoEncriptado.replaceAll(matriz[i][0],matriz[i][1]);
 
         }
-
-        
     }
     return textoEncriptado;
 }
@@ -97,18 +81,15 @@ function encriptarTexto(textoEncriptado){
 
 function desencriptarTexto(textoDesencriptado){
     let matriz = [["e","enter"], ["i","imes"], ["a","ai"], ["o","ober"], ["u","ufat"]];
-    //console.table(matriz);
-    //textoEncriptado = textoEncriptado.toLowerCase();
     for(let i = 0; i < matriz.length; i++){
         if(textoDesencriptado.includes(matriz[i][1])){
             textoDesencriptado = textoDesencriptado.replaceAll(matriz[i][1],matriz[i][0]);
 
         }
-
-        
     }
     return textoDesencriptado;
 }
+
 
 function copiarContenido(){
     mensaje.select();
