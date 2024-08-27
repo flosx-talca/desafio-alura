@@ -9,8 +9,8 @@ const botonCopiar = document.querySelector(".btn_copiar");
 
 function validaCaracteresEspeciales(validar){
     for(i=0;i<validar.length;i++){
-        //console.log(validar.charCodeAt(i));
-        if ((validar.charCodeAt(i) >= 97 && validar.charCodeAt(i) <= 122 )){
+        console.log(validar.charCodeAt(i));
+        if ((validar.charCodeAt(i) >= 97 && validar.charCodeAt(i) <= 122 || validar.charCodeAt(i) == 32 || (validar.charCodeAt(i) >= 48 && validar.charCodeAt(i) <= 57))){
 
         }
         else{
@@ -25,13 +25,21 @@ function validaCaracteresEspeciales(validar){
 }
 
 
-
-function botonEncriptar(){
+function cumpleCondicion(){
     let caracteresEspeciales = true;
-    let vacio =
+   // let vacio =
+   alert ("debtro de la funcioon")
     caracteresEspeciales = validaCaracteresEspeciales(textArea.value);
     console.log(caracteresEspeciales);
-    if (caracteresEspeciales){
+    return caracteresEspeciales;
+
+
+}
+
+function botonEncriptar(){
+    let pasoOK = cumpleCondicion();
+    
+    if (pasoOK){
         const texto = encriptarTexto(textArea.value);
         mensaje.value=texto;
         textArea.value="";
@@ -42,7 +50,7 @@ function botonEncriptar(){
     
     }
     else{
-        alert("Ingresar solo minusculas, sin acentos ni caracteres especiales y al menos 1 caracter")
+        alert("Ingresar solo minusculas, sin acentos ni caracteres especiales y al menos 1 caracter");
 
     }
 
@@ -50,13 +58,23 @@ function botonEncriptar(){
 
 
 function botonDesencriptar(){
-    const texto = desencriptarTexto(textArea.value);
-    mensaje.value=texto;
-    textArea.value="";
-    /*mensaje.style.backgroundImage = "none";
-    texto1.remove();
-    texto2.remove();
-    botonCopiar.style.display = "inline";*/
+    let pasoOK = cumpleCondicion();
+    if (pasoOK){
+
+
+        const texto = desencriptarTexto(textArea.value);
+        mensaje.value=texto;
+        textArea.value="";
+        /*mensaje.style.backgroundImage = "none";
+        texto1.remove();
+        texto2.remove();
+        botonCopiar.style.display = "inline";*/
+    }
+    else{
+        alert("Ingresar solo minusculas, sin acentos ni caracteres especiales y al menos 1 caracter");
+
+    }
+    
 
 }
 
