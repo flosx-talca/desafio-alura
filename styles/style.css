@@ -63,7 +63,7 @@
     background-repeat: no-repeat;
     border: none;
     border-radius: 24px;
-    color: #0A3871;
+    color: #495057;
     caret-color: transparent;
     width: 336px;
     height: 304px;
@@ -137,6 +137,7 @@
 .principal__botones__etiqueta{
     color: #495057;
     font-size: 18px;
+    margin: 2px;
 
 
 }
@@ -154,6 +155,64 @@
     
     
 
+}
+
+
+@media (max-width: 1384px) {
+    
+    .principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+           
+
+    }
+    .principal__derecha{
+        display: flex;
+        flex-direction: column;
+       
+        width: auto;
+        
+    }
+
+    .text-area_mensaje{
+        background-image: none;
+        width:auto;
+        height:auto;
+        background: transparent;
+        position: relative;
+        display: none;
+       /* margin-left: 98px;
+        margin-top: 10px;
+        padding-left: 20px;  
+        position: fixed; */
+        
+        
+        
+        
+        
+        
+       
+    
+    }
+    
+    
+    /*
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .presentacion__contenido{
+        width: auto;
+    }
+    .header{
+        padding: 10%;
+    }
+    .header__menu{
+        justify-content: center;
+    }*/
+
+    
 }
 
 

@@ -44,6 +44,7 @@ function botonEncriptar(){
         mensaje.value=texto;
         textArea.value="";
         mensaje.style.backgroundImage = "none";
+        mensaje.style.display = "inline";
         texto1.remove();
         texto2.remove();
         botonCopiar.style.display = "inline";
