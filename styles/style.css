@@ -239,6 +239,7 @@
             background: transparent;
             position: relative;
             display: none;
+            text-align: justify;
         }
        
 }
