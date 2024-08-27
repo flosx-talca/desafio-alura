@@ -153,7 +153,7 @@
 }
 
 
-@media (max-width: 1384px) {
+@media (max-width: 1200px) {
   
     .principal{
         display: flex;
@@ -188,7 +188,7 @@
     }
     
     
-     @media (max-width: 375px) {
+     @media (max-width: 700px) {
     
         .principal{
             display: flex;
