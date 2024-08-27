@@ -15,11 +15,7 @@ function validaCaracteresEspeciales(validar){
             return false;
         }
     }
-    if(i==0){
-        return false;
-
-    }
-    return true;
+     return true;
 }
 
 
@@ -45,7 +41,7 @@ function botonEncriptar(){
     
     }
     else{
-        alert("Ingresar solo minusculas, sin acentos ni caracteres especiales y al menos 1 caracter");
+        alert("Ingresar solo minusculas, sin acentos ni caracteres especiales");
 
     }
 
@@ -60,7 +56,7 @@ function botonDesencriptar(){
         textArea.value="";
     }
     else{
-        alert("Ingresar solo minusculas, sin acentos ni caracteres especiales y al menos 1 caracter");
+        alert("Ingresar solo minusculas, sin acentos ni caracteres especiales");
 
     }
 }
