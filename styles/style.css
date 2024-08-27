@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 *{
     background:#E5E5E5 ;
     font-family: "Inter";
@@ -6,14 +8,15 @@
     font-size: 32px;
     line-height: 150%;
     padding: 0;
-    margin: 0%s;
+    margin: 0%;
 }
 
 .header__logo{
     padding-top: 10px;
     margin-top: 1%;
     margin-left: 3%;
-    width: 2%;
+    width: 31px;
+    height: 48px;
 }
 
 .principal{
@@ -22,6 +25,7 @@
     margin-left: 50px;
     gap: 70px;
     margin-bottom: 2%;
+    box-sizing: border-box;
     
 }
 
@@ -157,6 +161,13 @@
 
 }
 
+.footer{
+    color: #495057;
+    font-size:12px;
+    text-align: center;
+ 
+}
+
 
 @media (max-width: 1384px) {
     
@@ -166,6 +177,15 @@
         align-items: center;
            
 
+    }
+    .text-area{
+        border: none;
+        color: #0A3871;
+        margin-top: 10px;
+        width:auto;
+        height:auto;
+        
+        /*text-transform: lowercase;*/
     }
     .principal__derecha{
         display: flex;
@@ -195,6 +215,75 @@
        
     
     }
+    @media (max-width: 375px) {
+    
+        .principal{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+               
+    
+        }
+        .principal__izquierda{
+            display: flex;
+            flex-direction: column;
+            
+            justify-content:space-between;
+            align-items: center;
+          
+            
+        }
+        .text-area{
+            border: none;
+            color: #0A3871;
+            margin-top: 10px;
+            width:auto;
+            height:auto;
+            text-align: center;
+            /*text-transform: lowercase;*/
+        }
+        
+
+        .botones{
+            display: flex;
+            flex-direction: column;
+            margin-top: 18px;
+            gap: 24px;
+            align-items: center;
+            
+        
+        
+        }
+
+        .principal__derecha{
+            display: flex;
+            flex-direction: column;
+           
+            width: auto;
+            align-items: center;
+            
+        }
+    
+        .text-area_mensaje{
+            background-image: none;
+            width:auto;
+            height:auto;
+            background: transparent;
+            position: relative;
+            display: none;
+           /* margin-left: 98px;
+            margin-top: 10px;
+            padding-left: 20px;  
+            position: fixed; */
+            
+            
+            
+            
+            
+            
+           
+        
+        }
     
     
     /*
